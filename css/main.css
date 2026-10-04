@@ -1,4 +1,6 @@
-
+body{
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
 .nav{
     height: 44px;
     background-color: #1d1d1fcc;
@@ -7,4 +9,28 @@
 .nav a{
     list-style-type: none; 
     font-size: 12px;
+}
+
+
+@media all and (max-width:768px){
+    .ban{
+    height: 500px;
+    margin-top: 44px;
+    background-image: url("../images/2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: aqua;
+}
+}
+@media all and (min-width:768px){
+    .ban{
+    height: 650px;
+    margin-top: 44px;
+    background-image: url("../images/3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: aqua;
+}
 }
