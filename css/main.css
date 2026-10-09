@@ -1,36 +1,330 @@
-body{
+body {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    max-width: 2560px;
+    margin: 0px auto;
 }
-.nav{
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
     height: 44px;
     background-color: #1d1d1fcc;
     line-height: 44px;
 }
-.nav a{
-    list-style-type: none; 
+
+.nav a {
+    list-style-type: none;
     font-size: 12px;
 }
 
 
-@media all and (max-width:768px){
-    .ban{
-    height: 500px;
-    margin-top: 44px;
-    background-image: url("../images/2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: aqua;
+@media all and (max-width:767px) {
+    .ban1 {
+        height: 500px;
+        margin-top: 44px;
+        background-image: url("../images/2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .ban2 {
+        height: 500px;
+        margin-top: 10px;
+        background-image: url("../images/5.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .p-banner2-1 {
+        font-size: 20px;
+    }
+
+    .p-banner2-2 {
+        font-size: 14px;
+    }
+
+    .ban3 {
+        height: 500px;
+        margin-top: 10px;
+        background-image: url("../images/8.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .head-banner3 {
+        font-size: 27px;
+    }
+
+    .head-banner3 img {
+        width: 27px;
+        margin-top: -10px;
+        margin-right: -5px;
+    }
+
+    .p-banner3 {
+        width: 300px;
+    }
+
+    .p-banner3-1 {
+        font-size: 20px;
+    }
+
+    .p-banner3 sup {
+        font-size: 11px;
+    }
+
+    .art1{
+        height: 500px;
+        margin-top: 10px;
+        background-image: url("../images/11.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+    .head-art1{
+        font-size: 25px;
+    }
+    .head-art1 img{
+        width: 25px;
+        margin-top: -10px;
+        margin-right: -5px;
+    }
+    .p-art1{
+        font-size: 18px;
+    }
+    .art2{
+        height: 580px;
+        margin-top: 10px;
+        background-image: url("../images/14.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
 }
+
+@media all and (min-width:768px) and (max-width:991px) {
+    .ban1 {
+        height: 690px;
+        margin-top: 44px;
+        background-image: url("../images/3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .ban2 {
+        height: 690px;
+        margin-top: 10px;
+        background-image: url("../images/6.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .p-banner2-1 {
+        font-size: 24px;
+    }
+
+    .p-banner2-2 {
+        font-size: 17px;
+    }
+
+    .ban3 {
+        height: 690px;
+        margin-top: 10px;
+        background-image: url("../images/9.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .head-banner3 {
+        font-size: 35px;
+    }
+
+    .head-banner3 img {
+        width: 35px;
+        margin-top: -10px;
+        margin-right: -5px;
+    }
+
+    .p-banner3 {
+        width: calc(500px+1vw);
+    }
+
+    .p-banner3-1 {
+        font-size: 25px;
+    }
+
+    .p-banner3 sup {
+        font-size: 15px;
+    }
+    .art1{
+        height: 490px;
+        margin-top: 10px;
+        background-image: url("../images/12.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+    .head-art1{
+        font-size: 25px;
+    }
+    .head-art1 img{
+        width: 25px;
+        margin-top: -10px;
+        margin-right: -5px;
+    }
+    .p-art1{
+        font-size: 18px;
+    }
+    .art2{
+        height: 490px;
+        margin-top: 10px;
+        background-image: url("../images/15.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
 }
-@media all and (min-width:768px){
-    .ban{
-    height: 650px;
-    margin-top: 44px;
-    background-image: url("../images/3.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: aqua;
+
+@media all and (min-width:992px) {
+    .ban1 {
+        height: 690px;
+        margin-top: 44px;
+        background-image: url("../images/4.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .ban2 {
+        height: 690px;
+        margin-top: 10px;
+        background-image: url("../images/7.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .p-banner2-1 {
+        font-size: 35px;
+    }
+
+    .p-banner2-2 {
+        font-size: 20px;
+    }
+
+    .ban3 {
+        height: 690px;
+        margin-top: 10px;
+        background-image: url("../images/10.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .head-banner3 {
+        font-size: 42px;
+    }
+
+    .head-banner3 img {
+        width: 42px;
+        margin-top: -10px;
+        margin-right: -5px;
+    }
+
+    .p-banner3 {
+        width: calc(500px+1vw);
+    }
+
+    .p-banner3-1 {
+        font-size: 27px;
+    }
+
+    .p-banner3 sup {
+        font-size: 15px;
+    }
+    .art1{
+        height: 580px;
+        margin-top: 10px;
+        background-image: url("../images/13.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+    .head-art1{
+        font-size: 29px;
+    }
+    .head-art1 img{
+        width: 29px;
+        margin-top: -10px;
+        margin-right: -5px;
+    }
+    .p-art1{
+        font-size: 20px;
+    }
+    .art2{
+        height: 580px;
+        margin-top: 10px;
+        background-image: url("../images/16.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
 }
+
+.banner-button1 {
+    width: calc(200px + 1vw);
+    height: 50px;
+    font-size: calc(14px + 0.08vw);
+    margin-top: -15px;
+}
+
+.banner-button2 {
+    width: calc(260px + 1vw);
+    height: 50px;
+    font-size: calc(14px + 0.08vw);
+    margin-top: -15px;
+}
+
+.buy {
+    color: #0071e3;
+    position: absolute;
+    z-index: 5;
+}
+
+.buy:hover {
+    background-color: #0071e3;
+    color: white;
+}
+
+.head-banner {
+    font-size: calc(30px + 1vw)
+}
+
+.p-banner1 {
+    font-size: calc(16px + 0.75vw);
 }
