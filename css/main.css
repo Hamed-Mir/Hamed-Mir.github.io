@@ -111,7 +111,31 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
+    .head-art2{
+        font-size: 32px;
+    }
+    .p-art2{
+        font-size: 22px;
+    }
+    .art3{
+        height: 580px;
+        margin-top: 10px;
+        background-image: url("../images/18.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
 
+    .art4{
+        height: 580px;
+        margin-top: 10px;
+        background-image: url("../images/21.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
 }
 
 @media all and (min-width:768px) and (max-width:991px) {
@@ -203,6 +227,32 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
+    .head-art2{
+        font-size: 32px;
+    }
+    .p-art2{
+        font-size: 22px;
+    }
+
+    .art3{
+        height: 490px;
+        margin-top: 10px;
+        background-image: url("../images/19.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .art4{
+        height: 490px;
+        margin-top: 10px;
+        background-image: url("../images/22.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
 }
 
 @media all and (min-width:992px) {
@@ -289,6 +339,31 @@ a {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/16.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+    .head-art2{
+        font-size: 45px;
+    }
+    .p-art2{
+        font-size: 23px;
+    }
+    .art3{
+        height: 580px;
+        margin-top: 10px;
+        background-image: url("../images/20.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .art4{
+        height: 580px;
+        margin-top: 10px;
+        background-image: url("../images/23.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
