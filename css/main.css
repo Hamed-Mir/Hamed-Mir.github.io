@@ -126,6 +126,12 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
+    .head-art3 img{
+        width: 120px;
+    }
+    .p-art3{
+        font-size: 21px;
+    }
 
     .art4{
         height: 580px;
@@ -243,7 +249,12 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-
+    .head-art3 img{
+        width: 130px;
+    }
+    .p-art3{
+        font-size: 21px;
+    }
     .art4{
         height: 490px;
         margin-top: 10px;
@@ -358,6 +369,12 @@ a {
         background-position: center;
         background-repeat: no-repeat;
         background-color: black;
+    }
+    .head-art3 img{
+        width: 170px;
+    }
+    .p-art3{
+        font-size: 24px;
     }
 
     .art4{
