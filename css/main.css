@@ -82,7 +82,7 @@ a {
         font-size: 11px;
     }
 
-    .art1{
+    .art1 {
         height: 500px;
         margin-top: 10px;
         background-image: url("../images/11.jpg");
@@ -91,18 +91,22 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art1{
+
+    .head-art1 {
         font-size: 25px;
     }
-    .head-art1 img{
+
+    .head-art1 img {
         width: 25px;
         margin-top: -10px;
         margin-right: -5px;
     }
-    .p-art1{
+
+    .p-art1 {
         font-size: 18px;
     }
-    .art2{
+
+    .art2 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/14.jpg");
@@ -111,13 +115,16 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art2{
+
+    .head-art2 {
         font-size: 32px;
     }
-    .p-art2{
+
+    .p-art2 {
         font-size: 22px;
     }
-    .art3{
+
+    .art3 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/18.jpg");
@@ -126,13 +133,16 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art3 img{
+
+    .head-art3 img {
         width: 120px;
     }
-    .p-art3{
+
+    .p-art3 {
         font-size: 21px;
     }
-    .art4{
+
+    .art4 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/21.jpg");
@@ -141,7 +151,8 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .art5{
+
+    .art5 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/24.jpg");
@@ -150,18 +161,22 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art5{
+
+    .head-art5 {
         font-size: 35px;
     }
-    .head-art5 img{
+
+    .head-art5 img {
         width: 30px;
         margin-top: -10px;
         margin-right: -8px;
     }
+
     .p-art3 sup {
         font-size: 11px;
     }
-    .art6{
+
+    .art6 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/28.jpg");
@@ -170,48 +185,99 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .tv-banner{
-        height: 498px;
+
+    .endless{
+        font-size: 32px;
+        background-color: #f5f5f7;
         margin-top: 10px;
-        overflow: hidden;
-        background-color: aqua;
     }
-    .f1{
+
+    .tv-banner {
+        height: 498px;
         position: relative;
     }
-    .if1{
+
+    .dark-layer1{
+        position: absolute;
+        z-index: 2;
+        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
+        margin-right: -30px;
+    }
+
+    .dark-layer2{
+        position: absolute;
+        z-index: 2;
+        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
+    }
+
+    .f1 {
+        position: relative;
+    }
+
+    .if1 {
         height: 498px;
         width: 260px;
         position: absolute;
     }
-    .if1 img{
+
+    .if1 img {
         width: 200px;
-        
+
     }
-    .pf1{
+
+    .pf1 {
         margin-top: 240px;
         font-size: 18px;
     }
-    .pf1 sup{
+
+    .pf1 sup {
         font-size: 11px;
     }
 
-    .match{
+    .match {
         position: relative;
     }
-    .imatch{
+
+    .imatch {
         height: 498px;
         width: 260px;
         position: absolute;
     }
-    .imatch img{
+
+    .imatch img {
         width: 200px;
-        
+
     }
-    .pmatch{
+
+    .pmatch {
         margin-top: 240px;
         font-size: 18px;
     }
+
+
+    .bay {
+        position: relative;
+    }
+
+    .ibay {
+        height: 498px;
+        width: 260px;
+        position: absolute;
+    }
+
+    .ibay img:last-of-type {
+        width: 150px;
+    }
+
+    .pbay {
+        margin-top: 220px;
+        font-size: 17px;
+    }
+
+    .pbay sup {
+        font-size: 11px;
+    }
+
 }
 
 @media all and (min-width:768px) and (max-width:991px) {
@@ -274,7 +340,8 @@ a {
     .p-banner3 sup {
         font-size: 15px;
     }
-    .art1{
+
+    .art1 {
         height: 490px;
         margin-top: 10px;
         background-image: url("../images/12.jpg");
@@ -283,18 +350,22 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art1{
+
+    .head-art1 {
         font-size: 25px;
     }
-    .head-art1 img{
+
+    .head-art1 img {
         width: 25px;
         margin-top: -10px;
         margin-right: -5px;
     }
-    .p-art1{
+
+    .p-art1 {
         font-size: 18px;
     }
-    .art2{
+
+    .art2 {
         height: 490px;
         margin-top: 10px;
         background-image: url("../images/15.jpg");
@@ -303,14 +374,16 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art2{
+
+    .head-art2 {
         font-size: 32px;
     }
-    .p-art2{
+
+    .p-art2 {
         font-size: 22px;
     }
 
-    .art3{
+    .art3 {
         height: 490px;
         margin-top: 10px;
         background-image: url("../images/19.jpg");
@@ -319,13 +392,16 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art3 img{
+
+    .head-art3 img {
         width: 130px;
     }
-    .p-art3{
+
+    .p-art3 {
         font-size: 21px;
     }
-    .art4{
+
+    .art4 {
         height: 490px;
         margin-top: 10px;
         background-image: url("../images/22.jpg");
@@ -334,7 +410,8 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .art5{
+
+    .art5 {
         height: 490px;
         margin-top: 10px;
         background-image: url("../images/25.jpg");
@@ -343,18 +420,22 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art5{
+
+    .head-art5 {
         font-size: 35px;
     }
-    .head-art5 img{
+
+    .head-art5 img {
         width: 35px;
         margin-top: -10px;
         margin-right: -10px;
     }
+
     .p-art3 sup {
         font-size: 12px;
     }
-    .art6{
+
+    .art6 {
         height: 490px;
         margin-top: 10px;
         background-image: url("../images/29.jpg");
@@ -362,6 +443,11 @@ a {
         background-position: center;
         background-repeat: no-repeat;
         background-color: black;
+    }
+    .endless{
+        font-size: 32px;
+        background-color: #f5f5f7;
+        margin-top: 10px;
     }
 }
 
@@ -425,7 +511,8 @@ a {
     .p-banner3 sup {
         font-size: 15px;
     }
-    .art1{
+
+    .art1 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/13.jpg");
@@ -434,18 +521,22 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art1{
+
+    .head-art1 {
         font-size: 29px;
     }
-    .head-art1 img{
+
+    .head-art1 img {
         width: 29px;
         margin-top: -10px;
         margin-right: -5px;
     }
-    .p-art1{
+
+    .p-art1 {
         font-size: 20px;
     }
-    .art2{
+
+    .art2 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/16.jpg");
@@ -454,13 +545,16 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art2{
+
+    .head-art2 {
         font-size: 45px;
     }
-    .p-art2{
+
+    .p-art2 {
         font-size: 23px;
     }
-    .art3{
+
+    .art3 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/20.jpg");
@@ -469,13 +563,16 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art3 img{
+
+    .head-art3 img {
         width: 170px;
     }
-    .p-art3{
+
+    .p-art3 {
         font-size: 24px;
     }
-    .art4{
+
+    .art4 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/23.jpg");
@@ -484,7 +581,8 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .art5{
+
+    .art5 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/26.jpg");
@@ -493,18 +591,22 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .head-art5{
+
+    .head-art5 {
         font-size: 50px;
     }
-    .head-art5 img{
+
+    .head-art5 img {
         width: 50px;
         margin-top: -10px;
         margin-right: -10px;
     }
+
     .p-art3 sup {
         font-size: 13px;
     }
-    .art6{
+
+    .art6 {
         height: 580px;
         margin-top: 10px;
         background-image: url("../images/30.jpg");
@@ -512,6 +614,11 @@ a {
         background-position: center;
         background-repeat: no-repeat;
         background-color: black;
+    }
+    .endless{
+        font-size: 56px;
+        background-color: #f5f5f7;
+        margin-top: 10px;
     }
 }
 
