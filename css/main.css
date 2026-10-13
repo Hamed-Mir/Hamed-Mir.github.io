@@ -2,6 +2,7 @@ body {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     max-width: 2560px;
     margin: 0px auto;
+    overflow-x: hidden;
 }
 
 a {
@@ -186,7 +187,7 @@ a {
         background-color: black;
     }
 
-    .endless{
+    .endless {
         font-size: 32px;
         background-color: #f5f5f7;
         margin-top: 10px;
@@ -197,17 +198,17 @@ a {
         position: relative;
     }
 
-    .dark-layer1{
+    .dark-layer1 {
         position: absolute;
         z-index: 2;
-        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
+        background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.8) 100%);
         margin-right: -30px;
     }
 
-    .dark-layer2{
+    .dark-layer2 {
         position: absolute;
         z-index: 2;
-        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
+        background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.8) 100%);
     }
 
     .f1 {
@@ -278,6 +279,58 @@ a {
         font-size: 11px;
     }
 
+
+    .small-banner {
+        height: 254px;
+    }
+
+    .small-banner div{
+        flex: 0 0 188px;
+    }
+
+    .small-banneri {
+        width: 188px;
+        height: 254px;
+        position: absolute;
+    }
+
+    .small-banner h2 {
+        font-size: 27px;
+    }
+
+    .small-bannerh img {
+        width: 23px;
+        margin-top: -12px;
+    }
+
+    .small-bannerp {
+        margin-top: 100px;
+        font-size: 14px;
+    }
+
+    .ro {
+        width: 188px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .ro2 {
+        width: 188px;
+        overflow: hidden;
+        background-image: radial-gradient(circle, #ecad50 15%, #976925 100%);
+        position: relative;
+    }
+
+    .go {
+        transform: translateY(-20px);
+        filter: blur(1px);
+    }
+
+    .go2 {
+        transform: translateY(-20px);
+        filter: blur(1px);
+        border-color: #976925;
+    }
 }
 
 @media all and (min-width:768px) and (max-width:991px) {
@@ -444,7 +497,8 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .endless{
+
+    .endless {
         font-size: 32px;
         background-color: #f5f5f7;
         margin-top: 10px;
@@ -455,17 +509,17 @@ a {
         position: relative;
     }
 
-    .dark-layer1{
+    .dark-layer1 {
         position: absolute;
         z-index: 2;
-        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
-        margin-right: -30px;
+        background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.8) 100%);
+        margin-right: 20px;
     }
 
-    .dark-layer2{
+    .dark-layer2 {
         position: absolute;
         z-index: 2;
-        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
+        background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.8) 100%);
     }
 
     .f1 {
@@ -531,6 +585,59 @@ a {
     .pbay sup {
         font-size: 11px;
     }
+
+    .small-banner {
+        height: 254px;
+    }
+
+    .small-banner div{
+        flex: 0 0 188px;
+    }
+
+    .small-banneri {
+        width: 188px;
+        height: 254px;
+        position: absolute;
+    }
+
+    .small-banner h2 {
+        font-size: 27px;
+    }
+
+    .small-bannerh img {
+        width: 23px;
+        margin-top: -12px;
+    }
+
+    .small-bannerp {
+        margin-top: 100px;
+        font-size: 14px;
+    }
+
+    .ro {
+        width: 188px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .ro2 {
+        width: 188px;
+        overflow: hidden;
+        background-image: radial-gradient(circle, #ecad50 15%, #976925 100%);
+        position: relative;
+    }
+
+    .go {
+        transform: translateY(-20px);
+        filter: blur(1px);
+    }
+
+    .go2 {
+        transform: translateY(-20px);
+        filter: blur(1px);
+        border-color: #976925;
+    }
+
 }
 
 @media all and (min-width:992px) {
@@ -697,7 +804,8 @@ a {
         background-repeat: no-repeat;
         background-color: black;
     }
-    .endless{
+
+    .endless {
         font-size: 56px;
         background-color: #f5f5f7;
         margin-top: 10px;
@@ -708,17 +816,17 @@ a {
         position: relative;
     }
 
-    .dark-layer1{
+    .dark-layer1 {
         position: absolute;
         z-index: 2;
-        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
+        background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.8) 100%);
         margin-right: -30px;
     }
 
-    .dark-layer2{
+    .dark-layer2 {
         position: absolute;
         z-index: 2;
-        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
+        background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.8) 100%);
     }
 
     .f1 {
@@ -783,7 +891,67 @@ a {
 
     .pbay sup {
         font-size: 11px;
-    }    
+    }
+
+
+    .small-banner {
+        height: 235px;
+    }
+
+    .small-banner div{
+        flex: 0 0 417px;
+    }
+
+    .small-banneri {
+        width: 417px;
+        height: 235px;
+        position: absolute;
+    }
+    .small-banneri a{
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 300px;
+    }
+
+    .small-banner h2 {
+        font-size: 27px;
+    }
+
+    .small-bannerh img {
+        width: 23px;
+        margin-top: -12px;
+    }
+
+    .small-bannerp {
+        margin-top: 120px;
+        font-size: 18px;
+    }
+
+    .small-bannergop {
+        width: 250px;
+        margin-top: 15px;
+        margin-right: -60px;
+        font-size: 18px;
+    }
+
+    .ro {
+        width: 188px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .ro2 {
+        width: 188px;
+        overflow: hidden;
+        background-image: radial-gradient(circle, #ecad50 15%, #976925 100%);
+        position: relative;
+    }
+
+    .go {
+        transform: scale(0.5) translateX(-180px);
+    }
+    
+
 }
 
 @media all and (min-width:1200px) {
@@ -792,18 +960,18 @@ a {
         position: relative;
     }
 
-    .dark-layer1{
+    .dark-layer1 {
         position: absolute;
         z-index: 2;
-        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
+        background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.8) 100%);
         margin-right: -1110px;
     }
 
-    .dark-layer2{
+    .dark-layer2 {
         position: absolute;
         z-index: 2;
-        background: linear-gradient(to bottom,transparent 45%,rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.8) 100%);
-    
+        background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.8) 100%);
+
     }
 
     .f1 {
@@ -818,7 +986,7 @@ a {
     }
 
     .pf1 {
-        width: 800px; 
+        width: 800px;
         font-size: 23px;
     }
 
@@ -867,7 +1035,70 @@ a {
 
     .pbay sup {
         font-size: 11px;
-    } 
+    }
+
+
+    .small-banner {
+        height: 265px;
+    }
+
+    .small-banner div{
+        flex: 0 0 470px;
+    }
+
+    .small-banneri {
+        width: 470px;
+        height: 235px;
+        position: absolute;
+    }
+    .small-banneri a{
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 350px;
+    }
+
+    .small-banner h2 {
+        font-size: 27px;
+    }
+
+    .small-bannerh img {
+        width: 23px;
+        margin-top: -12px;
+    }
+
+    .small-bannerp {
+        margin-top: 165px;
+        font-size: 18px;
+    }
+
+    .small-bannergop {
+        width: 250px;
+        margin-top: 15px;
+        margin-right: -60px;
+        font-size: 18px;
+    }
+
+    .ro {
+        width: 188px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .ro2 {
+        width: 188px;
+        overflow: hidden;
+        background-image: radial-gradient(circle, #ecad50 15%, #976925 100%);
+        position: relative;
+    }
+
+    .go {
+        transform: scale(0.5) translateX(-180px);
+    }
+
+    .go2 {
+        transform: scale(0.60) translateX(-150px);
+        border-color: #976925;
+    }
 }
 
 .banner-button1 {
@@ -910,3 +1141,32 @@ a {
 .p-banner1 {
     font-size: calc(16px + 0.75vw);
 }
+
+.scroll-bar{
+    height: 24px;
+}
+.scroll-line{
+    width: 48px;
+    height: 10px;
+    background-image: linear-gradient(to right,black 0%, black 46%,gray 47%, gray 100%);
+}
+
+section{
+    max-width: 980px;
+    font-size: 12px;
+    color: #0000008f;
+}
+section a{
+    color: #000000b8;
+}
+
+.footer-divider{
+    width: 90%;
+    height: 1px;
+    max-width: 980px;
+    background-color: #0000008f;
+}
+footer ul{
+    list-style-type: none;
+}
+
