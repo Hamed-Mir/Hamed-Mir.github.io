@@ -10,6 +10,13 @@ a {
     color: black;
 }
 
+nav {
+    position: relative;
+    z-index: 1000;
+    height: 44px;
+    background-color: #1d1d1f;
+}
+
 .nav {
     height: 44px;
     background-color: #1d1d1fcc;
@@ -19,6 +26,74 @@ a {
 .nav a {
     list-style-type: none;
     font-size: 12px;
+}
+
+.megamenu {
+    list-style: none;
+}
+
+.mega {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    max-height: 0;
+    background-color: #1d1d1f;
+    z-index: 999;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.sub {
+    width: 100%;
+    height: 500px;
+    background-color: #1d1d1f;
+    transform: translateY(-30px);
+    transition: all 300ms ease;
+    list-style: none;
+}
+
+.sub > div {
+    width: 220px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.sub div:first-child li {
+    font-size: 26px;
+    margin: 0px;
+}
+
+.sub div:nth-child(2) li,
+.sub div:last-of-child li {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.megamenu:hover .mega{
+    max-height: 500px;
+}
+
+.megamenu:hover .sub {
+    transform: translateY(0);
+}
+.lastp{
+    margin-top: -20px;
+}
+.blur-bg {
+    top: 44px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 44px);
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 300ms ease;
+}
+.megamenu:hover .blur-bg{
+    opacity: 1;
 }
 
 
@@ -284,7 +359,7 @@ a {
         height: 254px;
     }
 
-    .small-banner div{
+    .small-banner div {
         flex: 0 0 188px;
     }
 
@@ -590,7 +665,7 @@ a {
         height: 254px;
     }
 
-    .small-banner div{
+    .small-banner div {
         flex: 0 0 188px;
     }
 
@@ -898,7 +973,7 @@ a {
         height: 235px;
     }
 
-    .small-banner div{
+    .small-banner div {
         flex: 0 0 417px;
     }
 
@@ -907,7 +982,8 @@ a {
         height: 235px;
         position: absolute;
     }
-    .small-banneri a{
+
+    .small-banneri a {
         position: absolute;
         margin-top: 180px;
         margin-left: 300px;
@@ -950,7 +1026,7 @@ a {
     .go {
         transform: scale(0.5) translateX(-180px);
     }
-    
+
 
 }
 
@@ -1042,7 +1118,7 @@ a {
         height: 265px;
     }
 
-    .small-banner div{
+    .small-banner div {
         flex: 0 0 470px;
     }
 
@@ -1051,7 +1127,8 @@ a {
         height: 235px;
         position: absolute;
     }
-    .small-banneri a{
+
+    .small-banneri a {
         position: absolute;
         margin-top: 220px;
         margin-left: 350px;
@@ -1142,69 +1219,85 @@ a {
     font-size: calc(16px + 0.75vw);
 }
 
-.scroll-bar{
+.scroll-bar {
     height: 24px;
 }
-.scroll-line{
+
+.scroll-line {
     width: 48px;
     height: 10px;
-    background-image: linear-gradient(to right,black 0%, black 46%,gray 47%, gray 100%);
+    background-image: linear-gradient(to right, black 0%, black 46%, gray 47%, gray 100%);
 }
 
-section{
+section {
     max-width: 980px;
     font-size: 12px;
     color: #0000008f;
 }
-section a{
+
+section a {
     color: #000000b8;
 }
 
-.footer-divider{
+.footer-divider {
     width: 90%;
     height: 1px;
     max-width: 980px;
     background-color: #0000008f;
 }
-.footer1{
+
+.footer1 {
     max-width: 980px;
 }
-.footer1 h6{
+
+.footer1 h6 {
     font-size: 12px;
     width: 100%;
     height: 100%;
     flex-shrink: 0;
 }
-.footer1 i{
+
+.footer1 i {
     margin-left: -20%;
 }
-.footer1 ul, .footer2 ul{
+
+.footer1 ul,
+.footer2 ul {
     list-style-type: none;
 }
 
-.footer2{
+.footer2 {
     max-width: 980px;
     height: 400px;
     font-size: 12px;
 }
-.footer2 h6{
+
+.footer2 h6 {
     font-size: 12px;
 }
-.left1, .left2, .left3, .left4, .left5{
+
+.left1,
+.left2,
+.left3,
+.left4,
+.left5 {
     width: 20%;
     margin: 0px 2px;
     flex-shrink: 0;
     flex-grow: 0;
 }
-.footer2 li{
+
+.footer2 li {
     margin-bottom: 2px;
 }
-.footer2 a{
+
+.footer2 a {
     display: block;
     width: fit-content;
     color: #0000008f;
 }
-.footer2 a::after{
+
+.footer2 a::after {
     content: "";
     width: 100%;
     height: 1px;
@@ -1212,21 +1305,25 @@ section a{
     display: block;
     transform: scaleX(0);
 }
-.footer2 a:hover::after{
+
+.footer2 a:hover::after {
     transform: scaleX(1);
 }
-.footer3{
+
+.footer3 {
     font-size: 12px;
     max-width: 980px;
     text-align: left;
     color: #0000008f;
 }
-.footer4{
+
+.footer4 {
     max-width: 980px;
     font-size: 12px;
     color: #0000008f;
 }
-.footer4 a::after{
+
+.footer4 a::after {
     content: "";
     width: 100%;
     height: 1px;
@@ -1234,11 +1331,46 @@ section a{
     display: block;
     transform: scaleX(0);
 }
-.footer4 a{
+
+.footer4 a {
     display: inline-block;
     width: fit-content;
     color: #0000008f;
 }
-.footer4 a:hover::after{
+
+.footer4 a:hover::after {
     transform: scaleX(1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
