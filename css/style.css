@@ -22,7 +22,7 @@ body { min-width: 320px; }
 .mobile-menu a { padding: .85rem 1rem; border-radius: .6rem; color: #e8e8ed; font-size: .9rem; }
 .mobile-menu a:hover { background: #252936; }
 .hero-section { background: #08090d; }
-.hero-photo { position: absolute; inset: 0 0 0 32%; z-index: -2; background: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=90') center 48%/cover no-repeat; opacity: .7; }
+.hero-photo { position: absolute; inset: 0 0 0 32%; z-index: -2; }
 .hero-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg,#08090d 0%,rgba(8,9,13,.97) 25%,rgba(8,9,13,.58) 58%,rgba(8,9,13,.2) 100%),linear-gradient(0deg,#08090d 0%,transparent 30%,rgba(8,9,13,.12) 100%); }
 .hero-copy { position: relative; z-index: 2; }
 .gradient-text { background: linear-gradient(110deg,#a99aff,#7868ed); -webkit-background-clip: text; background-clip: text; color: transparent; }
