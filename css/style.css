@@ -85,7 +85,7 @@ body { min-width: 320px; }
 .social-link:hover { background: #242039; color: #aa9dff; }
 .site-footer { background: #08090d; }
 @media (min-width: 768px) {
-  .menu-toggle { width: 38px; height: 38px; }
+  .menu-toggle { display: none; }
   .services-layout { grid-template-columns: .85fr 1.6fr; align-items: center; gap: 2rem; }
   .testimonial-panel { grid-template-columns: .8fr 1.2fr; align-items: center; }
 }
