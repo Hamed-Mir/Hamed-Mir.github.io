@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover GrandVista Hotel & Resort. Luxury rooms, fine dining, spa and unforgettable stays. Book your stay today.">
+  <meta name="theme-color" content="#090d16">
+  <title>GrandVista Hotel & Resort | Luxury Stay</title>
+
+  <!-- Tailwind CSS CDN: convenient for this practice project. For production, use Tailwind CLI/Vite. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#090d16',
+            panel: '#111722',
+            panel2: '#171f2c',
+            gold: '#d8ad68',
+            goldlight: '#f0cf91',
+            muted: '#a8afbb'
+          },
+          fontFamily: {
+            display: ['Georgia', 'Times New Roman', 'serif'],
+            sans: ['Inter', 'Arial', 'sans-serif']
+          },
+          boxShadow: {
+            gold: '0 10px 35px rgba(216,173,104,.18)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-ink text-white font-sans antialiased">
+  <!-- Header -->
+  <header class="absolute inset-x-0 top-0 z-50 border-b border-white/10 bg-ink/35 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="#home" class="flex items-center gap-3" aria-label="GrandVista home">
+        <span class="brand-mark">H</span>
+        <span class="leading-tight">
+          <span class="block font-display text-2xl tracking-wide">GrandVista</span>
+          <span class="block text-[9px] tracking-[.34em] text-goldlight">HOTEL & RESORT</span>
+        </span>
+      </a>
+
+      <nav id="desktop-nav" class="hidden items-center gap-8 text-sm lg:flex" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#rooms">Rooms</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#testimonials">Testimonials</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <a href="#booking" class="hidden rounded-lg border border-gold/80 px-5 py-2.5 text-sm transition hover:bg-gold hover:text-ink lg:inline-flex">Book Now <span class="ml-2">→</span></a>
+      <button id="menu-toggle" class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-white/20 text-2xl lg:hidden" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
+    <nav id="mobile-nav" class="hidden border-t border-white/10 bg-ink/95 px-5 py-4 lg:hidden" aria-label="Mobile navigation">
+      <div class="grid gap-1">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#rooms">Rooms</a>
+        <a href="#services">Services</a><a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+        <a href="#booking" class="mt-2 rounded-lg bg-gold px-4 py-3 text-center font-semibold text-ink">Book Now →</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero-section relative flex min-h-[760px] items-center overflow-hidden pt-24">
+      <div class="hero-overlay absolute inset-0"></div>
+      <div class="relative z-10 mx-auto grid w-full max-w-7xl items-center px-5 pb-40 pt-20 lg:px-8">
+        <div class="max-w-2xl">
+          <p class="mb-5 text-xs font-semibold uppercase tracking-[.25em] text-goldlight sm:text-sm">Luxury stay, unforgettable experience</p>
+          <h1 class="font-display text-5xl leading-[.98] sm:text-6xl lg:text-7xl">Welcome to<br><span class="text-goldlight">GrandVista Hotel</span></h1>
+          <p class="mt-6 max-w-lg text-base leading-7 text-white/85 sm:text-lg">Experience the perfect blend of luxury, comfort and hospitality in the heart of the city.</p>
+          <div class="mt-8 flex flex-wrap items-center gap-5">
+            <a href="#rooms" class="rounded-lg bg-gradient-to-r from-goldlight to-gold px-6 py-3.5 text-sm font-bold text-ink shadow-gold transition hover:-translate-y-1">Explore Our Rooms <span class="ml-2">→</span></a>
+            <a href="#gallery" class="inline-flex items-center gap-3 text-sm font-medium hover:text-goldlight"><span class="flex h-10 w-10 items-center justify-center rounded-full border border-white/50">▶</span> Watch Video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Booking widget -->
+      <div id="booking" class="absolute bottom-5 left-1/2 z-20 w-[calc(100%-2rem)] max-w-5xl -translate-x-1/2 rounded-2xl border border-white/10 bg-[#0b111bdc] p-3 shadow-2xl backdrop-blur-xl sm:bottom-8 sm:p-4">
+        <form id="booking-form" class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_.8fr_auto] lg:items-center">
+          <label class="booking-field"><span class="field-icon">▦</span><span><small>Check In</small><input aria-label="Check-in date" type="date" id="checkin" required></span></label>
+          <label class="booking-field"><span class="field-icon">▦</span><span><small>Check Out</small><input aria-label="Check-out date" type="date" id="checkout" required></span></label>
+          <label class="booking-field"><span class="field-icon">♙</span><span><small>Guests</small><select id="guests" aria-label="Number of guests"><option>2 Adults</option><option>1 Adult</option><option>3 Adults</option><option>4 Adults</option><option>2 Adults, 1 Child</option><option>2 Adults, 2 Children</option></select></span></label>
+          <button class="rounded-xl bg-gradient-to-r from-goldlight to-gold px-7 py-4 text-sm font-bold text-ink transition hover:brightness-110" type="submit">Check Availability →</button>
+        </form>
+        <p id="booking-message" class="hidden px-2 pt-2 text-sm text-goldlight" role="status"></p>
+      </div>
+    </section>
+
+    <!-- Facilities strip -->
+    <section id="services" class="border-y border-white/10 bg-[#0d131d]">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-y-5 px-5 py-7 sm:grid-cols-3 lg:grid-cols-5 lg:px-8">
+        <div class="facility"><span>◇</span><p>Luxury Rooms<br>& Suites</p></div>
+        <div class="facility"><span>♨</span><p>Fine Dining<br>Restaurant</p></div>
+        <div class="facility"><span>♧</span><p>Relaxing Spa<br>& Wellness</p></div>
+        <div class="facility"><span>♜</span><p>Modern Fitness<br>Center</p></div>
+        <div class="facility"><span>≋</span><p>Infinity Pool</p></div>
+      </div>
+    </section>
+
+    <!-- About and room cards -->
+    <section id="about" class="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-2 lg:px-8 lg:py-24">
+      <div class="grid gap-7 sm:grid-cols-[1.05fr_.95fr] sm:items-center">
+        <img class="h-72 w-full rounded-2xl object-cover sm:h-[390px]" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85" alt="Elegant luxury hotel bedroom">
+        <div>
+          <p class="eyebrow">About GrandVista</p>
+          <h2 class="section-title mt-3">A World-Class<br>Hotel Experience</h2>
+          <p class="mt-4 text-sm leading-7 text-muted">At GrandVista, we are committed to providing an exceptional stay with world-class amenities, elegant design and personalized service.</p>
+          <a href="#contact" class="mt-6 inline-flex rounded-lg border border-gold px-5 py-3 text-sm text-goldlight transition hover:bg-gold hover:text-ink">Learn More →</a>
+        </div>
+      </div>
+
+      <div id="rooms">
+        <div class="mb-6 flex items-end justify-between gap-4">
+          <div><p class="eyebrow">Our Rooms</p><h2 class="section-title mt-2">Find Your Perfect Room</h2></div>
+          <a href="#contact" class="shrink-0 text-xs text-goldlight hover:text-white sm:text-sm">View All Rooms →</a>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+          <article class="room-card">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=700&q=80" alt="Deluxe hotel room">
+            <div class="p-4"><h3 class="font-semibold">Deluxe Room</h3><p class="mt-1 text-sm"><span class="text-goldlight">$120</span> <span class="text-muted">/ night</span></p></div>
+          </article>
+          <article class="room-card">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=80" alt="Executive hotel suite">
+            <div class="p-4"><h3 class="font-semibold">Executive Suite</h3><p class="mt-1 text-sm"><span class="text-goldlight">$200</span> <span class="text-muted">/ night</span></p></div>
+          </article>
+          <article class="room-card">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Presidential hotel suite">
+            <div class="p-4"><h3 class="font-semibold">Presidential Suite</h3><p class="mt-1 text-sm"><span class="text-goldlight">$350</span> <span class="text-muted">/ night</span></p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="bg-[#0d131d] py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="mb-8 text-center"><p class="eyebrow">Discover GrandVista</p><h2 class="section-title mt-2">Moments Worth Remembering</h2></div>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1100&q=85" alt="Luxury resort swimming pool">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=85" alt="Fine dining restaurant">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=85" alt="Resort outdoor lounge">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="mx-auto max-w-4xl px-5 py-16 text-center sm:py-24">
+      <p class="eyebrow">Guest Stories</p>
+      <h2 class="section-title mt-3">What Our Guests Say</h2>
+      <div class="mt-9 rounded-2xl border border-white/10 bg-panel p-8 sm:p-12">
+        <div class="text-3xl tracking-widest text-gold">★★★★★</div>
+        <blockquote class="mx-auto mt-5 max-w-2xl font-display text-2xl leading-relaxed text-white/90 sm:text-3xl">“An exceptional experience from the warm welcome to the beautifully designed room. Every detail made our stay special.”</blockquote>
+        <p class="mt-6 text-sm font-semibold">Olivia Bennett</p><p class="mt-1 text-xs text-muted">Guest from London</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="offer-banner relative overflow-hidden">
+      <div class="relative z-10 mx-auto flex max-w-7xl flex-col gap-6 px-5 py-12 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <div><p class="eyebrow">Special offer</p><h2 class="mt-2 font-display text-3xl sm:text-4xl">Make Your Stay Unforgettable</h2><p class="mt-2 text-sm text-white/80 sm:text-base">Book now and enjoy exclusive offers and special amenities.</p></div>
+        <a href="#booking" class="inline-flex w-fit rounded-lg bg-gradient-to-r from-goldlight to-gold px-7 py-4 text-sm font-bold text-ink">Book Your Stay →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="border-t border-white/10 bg-[#080c13]">
+    <div class="mx-auto grid max-w-7xl gap-8 px-5 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div class="flex items-start gap-3"><span class="brand-mark">H</span><span><span class="block font-display text-2xl">GrandVista</span><span class="text-[9px] tracking-[.3em] text-goldlight">HOTEL & RESORT</span></span></div>
+      <div><h3 class="mb-3 font-semibold">Explore</h3><div class="grid grid-cols-2 gap-2 text-sm text-muted"><a href="#about">About</a><a href="#rooms">Rooms</a><a href="#services">Services</a><a href="#gallery">Gallery</a></div></div>
+      <div><h3 class="mb-3 font-semibold">Contact</h3><p class="text-sm leading-7 text-muted">12 Grand Avenue, City Center<br>+1 (555) 123-4567<br>hello@grandvista.example</p></div>
+      <div><h3 class="mb-3 font-semibold">Follow Our Journey</h3><div class="flex gap-3 text-sm text-goldlight"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a></div></div>
+    </div>
+    <div class="border-t border-white/10 px-5 py-5 text-center text-xs text-muted">© 2026 GrandVista Hotel. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
